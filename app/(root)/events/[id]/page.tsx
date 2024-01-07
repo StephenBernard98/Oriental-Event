@@ -23,13 +23,13 @@ const EventDetails = async ({
   return (
     <>
       <section className="max-w-[1250px] mx-auto mt-3 rounded-xl flex justify-center bg-primary-50 bg-dotted-pattern bg-contain">
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 2xl:max-w-7xl">
           <Image
             src={event.imageUrl}
             alt="hero image"
             width={700}
             height={700}
-            className="h-full min-h-[300px] object-cover object-center"
+            className="h-full w-full min-h-[300px] object-cover object-center"
           />
 
           <div className="flex w-full flex-col gap-8 p-5 md:p-10">

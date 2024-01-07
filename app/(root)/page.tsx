@@ -20,11 +20,13 @@ export default async function Home({ searchParams }: SearchParamProps) {
     <main className="">
       <Hero />
 
-      <div className=" w-full font-bold text-center text-xl md:text-4xl mt-7  gap-5 md:flex-row">
+      <div className="font-bold text-center text-xl md:text-4xl mt-7">
         Search and filter Categories
       </div>
-      <Search />
-      <CategoryFilter />
+      <div className="flex items-center mx-2 h-full flex-col gap-5 md:flex-row">
+        <Search />
+        <CategoryFilter />
+      </div>
       <section
         className="wrapper my-8 flex flex-col gap-8 md:gap-12"
         id="events"
@@ -41,8 +43,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
           emptyStateSubtext="Come back later"
           collectionType="All_Events"
           limit={6}
-          page={1}
-          totalPages={2}
+          page={page}
+          totalPages={events?.totalPages}
         />
       </section>
     </main>

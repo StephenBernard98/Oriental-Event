@@ -23,7 +23,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <div className="font-bold text-center text-xl md:text-4xl mt-7">
         Search and filter Categories
       </div>
-      <div className="flex items-center mx-2 h-full flex-col gap-5 md:flex-row">
+      <div className="flex items-center mx-2 h-full flex-col gap-3 md:flex-row">
         <Search />
         <CategoryFilter />
       </div>
